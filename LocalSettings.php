@@ -29,8 +29,8 @@ $wgLogo             = "$wgStylePath/common/images/wiki.png";
 $wgEnableEmail      = true;
 $wgEnableUserEmail  = false; # UPO
 
-$wgEmergencyContact = "apache@192.168.11.239";
-$wgPasswordSender   = "apache@192.168.11.239";
+$wgEmergencyContact = "mguerra@trans.com.ar";
+$wgPasswordSender   = "mguerra@trans.com.ar";
 
 $wgEnotifUserTalk      = false; # UPO
 $wgEnotifWatchlist     = false; # UPO
@@ -40,8 +40,8 @@ $wgEmailAuthentication = true;
 $wgDBtype           = "mysql";
 $wgDBserver         = "localhost";
 $wgDBname           = "NG_wiki";
-$wgDBuser           = "wikiuser";
-$wgDBpassword       = "Trans666";
+$wgDBuser           = "xxxxx";
+$wgDBpassword       = "xxxxx";
 
 # MySQL specific settings
 $wgDBprefix         = "";
