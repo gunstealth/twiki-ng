@@ -140,3 +140,26 @@ $wgResourceLoaderMaxQueryLength = -1;
 
 #### Editor WYSIWYG
 require_once("$IP/extensions/WYSIWYG/WYSIWYG.php");
+
+#### Quien lo puede usar
+$wgGroupPermissions['registered_users']['wysiwyg']=true;
+
+
+###########  Permisos  ###########
+
+### Nadie entra, mira o toca.
+$wgGroupPermissions['*']['createaccount'] = false;
+$wgGroupPermissions['*']['read'] = false;
+$wgGroupPermissions['*']['edit'] = false;
+
+### Pero...
+function efLoginFormMessage( &$template ) {
+        $template->set( 'header', "(Para creacion de cuentas y permisos de edicion, por favor envie un e-mail a Mr. Mauro Guerra, mguerra@trans.com.ar )");
+                   return true;
+}
+        $wgHooks['UserLoginForm'][]='efLoginFormMessage';
+                           
+### Toc-toc...
+$wgWhitelistRead = array ("Pagina Principal", "Special:Userlogin", "MediaWiki:Common.css", "MediaWiki:Common.js", "MediaWiki:Monobook.css", "MediaWiki:Monobook.js", "-");
+                 
+               
