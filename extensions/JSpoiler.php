@@ -10,9 +10,9 @@
  */
  
 // Configuration:
-$defaultText = "Show text";
+$defaultText = "Mostrar texto";
 $spoilerCSS = "border: 1px dashed #000000; background-color: #EEEEF2; padding: 3px;";
-$spoilerHeaderCSS = "font-size:135%; color:#ff0000;";
+$spoilerHeaderCSS = "font-size:110%; color:#ff0000;";
 $spoilerLinkCSS = "background-color:#EEEEF2; color:#0000FF; padding:2px 4px 2px 4px; border:solid black 1px; text-decoration: underline;";
 // End Configuration
  
