@@ -22,7 +22,7 @@ $wgScriptExtension  = ".php";
 ## The relative URL path to the skins directory
 $wgStylePath        = "$wgScriptPath/skins";
 
-$wgLogo             = "$wgStylePath/common/images/wiki.png";
+$wgLogo             = "$wgScriptPath/twiki.png";
 
 ## UPO means: this is also a user preference option
 
@@ -79,7 +79,7 @@ $wgSecretKey = "3b9a3350c52c89c93e6d10d77f863c0185ed68cb15d6870fe34a08e5efcab055
 # web installer while LocalSettings.php is in place
 $wgUpgradeKey = "b8364424985728a9";
 
-$wgDefaultSkin = "vector";
+$wgDefaultSkin = "monobook";
 
 ## License and Creative Commons licenses are supported so far.
 #$wgEnableCreativeCommonsRdf = true;
@@ -94,11 +94,18 @@ $wgDiff3 = "/usr/bin/diff3";
 
 $wgResourceLoaderMaxQueryLength = -1;
 
+#########        Extensiones y Permisos      ############
+# 
 #### Editor WYSIWYG
 require_once("$IP/extensions/WYSIWYG/WYSIWYG.php");
-
+#
 #### Quien lo puede usar
 $wgGroupPermissions['registered_users']['wysiwyg']=true;
+#
+#### JSpoiler
+require_once("$IP/extensions/JSpoiler.php"); 
+#
+#### Quien, con quien.
 
 
 ###########  Permisos  ###########
